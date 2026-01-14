@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSOLUTE</title>
+    <style>
+        #gparent {
+            background-color: rgb(175, 137, 212);
+            width: 700px;
+            height: 500px;
+            position: relative;
+            bottom: 100px;
+            left: 10px;
+        }
+
+        #parent {
+            background-color: blueviolet;
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            bottom: 100px;
+            left: 10px;
+
+
+        }
+        #box{
+            background-color: rgb(84, 111, 9);
+            width: 50%;
+            height: 100px;
+            position: sticky;
+            top: 100px;
+        }
+        #box1{
+            background-color: rgb(84, 111, 9);
+            width: 50%;
+            height: 100px;
+            position: relative;
+            top: 1500px;
+        }
+
+        #child {
+            background-color: rgb(84, 111, 9);
+            width: 50%;
+            height: 100px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gparent">
+        Gparent
+        <div id="parent">
+            parent
+            <div id="child">
+                child
+            </div>
+        </div>
+    </div>
+<div id="box">
+    addddd
+</div>
+<div id="box1">
+    addddd
+</div>
+</body>
+
+</html>

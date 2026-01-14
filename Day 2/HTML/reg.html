@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+</head>
+
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form action="">
+        <label for="">Name:</label>
+        <input name="name" type="text" placeholder="Enter the name" required>
+        <br><br>
+        <label for="">Address:</label>
+        <textarea name="address" rows="7" cols="30" placeholder="Enter the address"></textarea>
+        <br><br>
+        <label for="">Emali:</label>
+        <input type="email" name="email" placeholder="Enter email id" required>
+        <br><br>
+        <label for="">Gender:</label>
+        <label for="radio">Male<input type="radio" name="gender" value="male"> Female <input type="radio" name="gender" value="female"></label>
+                <br><br>
+        <label for="">DOB:</label>
+        <input type="date" name="dob">
+        <br><br>
+        <label for="">Event :</label>
+        <select name="event" >
+            <option value="" disabled selected></option>
+            <option value="tresurehunt">Tresure Hunt</option>
+            <option value="hackathons">Hackathons</option>
+        </select>
+        <br><br>
+        <label for="">Upload Passport Size Photo :</label>
+        <input type="file" name="photo" accept="image/*">
+        <br><br>
+        <label for="">Declaration</label><br><br>
+        <label for=""><input type="checkbox"  >I agree T&C </label><br><br>
+        <button type="submit"> REGISTER</button>
+
+    </form>
+</body>
+
+</html>

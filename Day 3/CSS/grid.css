@@ -1,0 +1,36 @@
+#container {
+    background-color: aqua;
+    font-size: 35px;
+    color: aliceblue;
+    text-align: center;
+    border: solid red 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px 100px 100px 100px;
+    /* row-gap: 10;
+    column-gap: 10; */
+    gap: 10px;
+    /* justify-items: center; */
+    /* align-items: end; */
+}
+
+.item {
+    /* width: 100px;
+height: 100px; */
+    background-color: lightgreen;
+    border: solid rgb(37, 161, 72) 5px;
+
+}
+
+#item3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+#item1 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}

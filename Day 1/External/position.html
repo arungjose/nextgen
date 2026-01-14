@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #box1 {
+            height: 250px;
+            width: 250px;
+            background-color: #40661f;
+            border: dashed #1c3902 10px;
+            text-align: center;
+
+            position: relative;
+            top: 1500px;
+            left: 1200px
+        }
+
+        #box2 {
+            height: 250px;
+            width: 250px;
+            background-color: #c7eb12;
+            border: double #809030 10px;
+            text-align: center;
+        }
+
+        #parent {
+            height: 250px;
+            width: 250px;
+            background-color: #ffc4ab;
+            border: dotted #8d3a17 10px;
+            text-align: center;
+        }
+
+        #child {
+            height: 100px;
+            width: 100px;
+            background-color: #d1f793;
+            text-align: center;
+
+        }
+
+        #box3 {
+            height: 250px;
+            width: 250px;
+            background-color: #8680f1;
+            border: solid #252086 10px;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        h3 {
+            margin-top: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box3">
+        <h3>Box 3</h3>
+    </div>
+    <div id="box1">
+        <h3>Box 1</h3>
+    </div>
+    <div id="box2">
+        <h3>Box 2</h3>
+    </div>
+    <div id="parent">
+        Parent
+        <div id="child">
+            Child
+        </div>
+    </div>
+
+</body>
+
+</html>
