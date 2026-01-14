@@ -1,0 +1,18 @@
+* {
+    background-color: #9ee85d;
+    margin: 0px;
+}
+
+h1 {
+    font-family: "Minecraft";
+    font-size: 60px;
+    color: #f3ffe7;
+    background-color: #854F2B;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    border-radius: 30px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box{
+            background-color: rgb(255, 1, 1);
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            transition: transform 10s, background-color 10s;
+
+        }
+        .box:hover{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%)    rotate(45deg) scale(0.5) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
