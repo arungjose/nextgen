@@ -1,0 +1,9 @@
+// Is it possible to implement for-else just like if-else statements?
+Is set mutable or immutable?
+Can a variable name start with the underscore '_' ?
+Will a python program show compile-time error if a keyword is used as a variable?
+Which brackets should be used for printing f-strings?
+//Which datastructure is used for hash-tables?
+Is the following set of blocks possible? try - except - else - finally
+Is it possible to have 2 same keys in a python dictionary
+Is it possible to reverse a string using string slicing
