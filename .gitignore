@@ -1,0 +1,13 @@
+# Recursively ignore any folder named venv or .venv
+**/venv/
+**/.venv/
+
+# Recursively ignore Python cache folders
+**/__pycache__/
+
+# Recursively ignore compiled Python files
+**/*.py[cod]
+**/*$py.class
+
+# Recursively ignore pytest metadata
+**/.pytest_cache/
