@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+        <center>
+            <div
+                style="
+                    border: 2px solid #333;
+                    border-radius: 20px;
+                    padding: 30px;
+                    text-align: center;
+                    max-width: 500px;
+                    margin-top: 150px;
+                "
+            >
+                <h1>About Campus Core</h1>
+
+                <nav style="margin-bottom: 20px">
+                    <a href="/">Home</a> | <a href="/about/">About</a> |
+                    <a href="/contact/">Contact</a>
+                </nav>
+
+                <p>
+                    Campus Core is a Django-based application built to organize
+                    school data.
+                </p>
+
+                <p>The system is divided into two main modules:</p>
+
+                <ul
+                    style="
+                        list-style: none;
+                        padding: 0;
+                        text-align: left;
+                        display: inline-block;
+                    "
+                >
+                    <li>
+                        <strong>Students:</strong> Handles enrollment and
+                        records.
+                    </li>
+                    <li>
+                        <strong>Courses:</strong> Manages the academic
+                        curriculum.
+                    </li>
+                </ul>
+            </div>
+        </center>
+{% endblock %}

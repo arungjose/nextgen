@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+       <center>
+            <div
+                style="
+                    border: 2px solid #333;
+                    border-radius: 20px;
+                    padding: 30px;
+                    text-align: center;
+                    max-width: 500px;
+                    margin-top: 150px;
+                "
+            >
+                <h1>Campus Management System</h1>
+                <nav>
+                    <a href="/">Home</a> | <a href="/about/">About</a> |
+                    <a href="/contact/">Contact</a>
+                </nav>
+
+                <h2>Welcome to the Administration Portal</h2>
+                <p>
+                    This system allows you to manage students and courses
+                    efficiently.
+                </p>
+                <a href="/students/list">View Student Directory</a><br />
+                <a href="/courses/catalog">View Course Catalog</a>
+            </div>
+        </center>
+{% endblock %}

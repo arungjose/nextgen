@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div
+            style="
+                border: 2px solid black;
+                border-radius: 20px;
+                padding: 70px;
+                text-align: center;
+            "
+        >
+            <h1>Contact Us</h1>
+            <nav><a href="/">Home</a> | <a href="/about/">About</a></nav>
+            <a href="/contact/">Contact</a>
+
+            <form style="text-align: left; margin-top: 20px">
+                Name: <br /><input type="text" /><br /><br />
+                Email: <br /><input type="email" /><br /><br />
+                Issue: <br />
+                <select>
+                    <option>IT Support</option>
+                    <option>Registrar</option></select
+                ><br /><br />
+                Message: <br /><textarea></textarea><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+        {% include 'partials/forms.html' %}
+
+{% endblock %}

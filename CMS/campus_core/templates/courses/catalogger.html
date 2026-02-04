@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div
+            style="
+                border: 2px solid black;
+                border-radius: 20px;
+                padding: 30px;
+                text-align: center;
+            "
+        >
+            <h1>Course Catalog</h1>
+            <nav style="margin-bottom: 20px">
+                <a href="/">Home</a> | <a href="/about/">About</a> |
+                <a href="/contact/">Contact</a>
+            </nav>
+
+            <p>Select your course:</p>
+            <ul>
+            {% for items in courses %}
+                <li>{{ items }}</li>
+            {% endfor %}
+            </ul>
+                <br><br>
+
+                <h2>Total UG courses    :   {{count.UG}}</h2>
+                <h2>Total PG courses    :   {{count.PG}}</h2>
+
+                {% if count.PG > 3 %}
+                <h4>NAAC ACREDITED COLLEGE!</h4>
+                {% endif %}
+
+                <input
+                    type="submit"
+                    value="Confirm"
+                    style="width: 100%; cursor: pointer"
+                />
+            </form>
+        </div>
+{% endblock %}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Core</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #2d3436;
+            --accent: #0984e3;
+            --border: #dfe6e9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Navigation Styling */
+        nav {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Content Area */
+        main {
+            min-height: 60vh;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: #636e72;
+            text-align: center;
+        }
+
+        /* Global UI Tweaks */
+        h1 { margin-bottom: 1rem; color: #000; }
+        p { margin-bottom: 1.2rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <main>
+        {% block content %}
+        {# Child content will appear here #}
+        {% endblock %}
+    </main>
+
+    <footer>
+        &copy; 2024 Campus Core. All rights reserved.
+    </footer>
+</body>
+</html>
