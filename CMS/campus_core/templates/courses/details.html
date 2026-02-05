@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Specialization</th>
+        <th>Fee</th>
+        <th>Accreditation</th>
+    </tr>
+
+    {% for course in details %}
+    <tr>
+        <td>{{course.name}}</td>
+        <td>{{course.spec}}</td>
+        <td>{{course.fee}}</td>
+        <td>{{course.accr}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

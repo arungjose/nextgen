@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from .models import Courses
 
 # Create your views here.
 def course_catalog(request):
@@ -11,3 +11,7 @@ def course_catalog(request):
     return render(request, "courses/catalogger.html", {"courses":courses, "count":count})
 
     # return HttpResponse("<h1>Browse your available courses here</h1>")
+
+def course_details(request):
+    data = Courses.objects.all()
+    return render(request, "courses/details.html", {"details":data})

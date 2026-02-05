@@ -1,9 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from .models import Student
 
 # Create your views here.
 def student_list(request):
+    data=Student.objects.all()
+
+    return render(request, "students/studentlist.html", {"data": data, "count":len(data)})
+
+def old_student_list(request):
 
    std_record = [
        {'slno': 1, 'name': 'Arun Kumar', 'course': 'Computer Science'},

@@ -5,29 +5,31 @@
 
             {# The following is the contect passed from view #}
 
-            {% if adm_data.admission_closed %}
+            <!--{% if adm_data.admission_closed %}
             <h2 style="color: red;">Admissions are closed for now</h2>
 
             {% else %}
-            <h2 style="color: mediumseagreen;">Admissions are still open</h2>
+            <h2 style="color: mediumseagreen;">Admissions are still open</h2>-->
 
             {% endif %}
-            <h3>Count of Students : {{adm_data.count}}</h3>
+            <h3>Count of Students : {{count}}</h3>
 
-            {% if adm_data.count >= 50 %}
+            {% if count >= 3 %}
             <h3>Total enrollment is greater than last year!</h3>
             {% endif %}
 
             <table>
                 <tr>
-                    <th>Sl no</th>
+                    <th>Slno</th>
                     <th>Name</th>
+                    <th>Sem</th>
                     <th>Course</th>
                 </tr>
-                {% for stud in adm_data.students %}
+                {% for stud in data %}
                 <tr>
                     <td>{{stud.slno}}</td>
                     <td>{{stud.name}}</td>
+                    <td>{{stud.sem}}</td>
                     <td>{{stud.course}}</td>
                 </tr>
                 {% endfor %}

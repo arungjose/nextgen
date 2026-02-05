@@ -58,6 +58,15 @@ nav a:hover {
     border-radius: 5px;
 }
 
+.btn:hover {
+    display: inline-block;
+    background-color: #ffdb26;
+    color: #043873;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
 main {
     flex: 1;
 }
