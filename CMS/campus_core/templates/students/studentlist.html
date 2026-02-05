@@ -1,20 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-        <div
-            style="
-                border: 2px solid black;
-                border-radius: 20px;
-                padding: 30px;
-                text-align: center;
-            "
-        >
-            <h1>Student List</h1>
-            <nav style="margin-bottom: 20px">
-                <a href="/">Home</a> | <a href="/about/">About</a> |
-                <a href="/contact/">Contact</a>
-            </nav>
+        <div>
+            <h2>Student List</h2>
 
             {# The following is the contect passed from view #}
+
             {% if adm_data.admission_closed %}
             <h2 style="color: red;">Admissions are closed for now</h2>
 
@@ -29,56 +19,18 @@
             {% endif %}
 
             <table>
-                <tr><th>Sl no</th><th>Name</th><th>Course</th></tr>
+                <tr>
+                    <th>Sl no</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
                 {% for stud in adm_data.students %}
                 <tr>
-                    <td>{{stud.slno}}</td><td>{{stud.name}}</td><td>{{stud.course}}</td>
+                    <td>{{stud.slno}}</td>
+                    <td>{{stud.name}}</td>
+                    <td>{{stud.course}}</td>
                 </tr>
                 {% endfor %}
-            </table>
-
-            <table
-                style="border-collapse: collapse; width: 100%; text-align: left"
-            >
-                <thead>
-                    <tr style="border-bottom: 2px solid black">
-                        <th style="padding: 10px">Student Name</th>
-                        <th style="padding: 10px">Roll No</th>
-                        <th style="padding: 10px">Branch</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="padding: 10px">Arun Kumar</td>
-                        <td style="padding: 10px">CS101</td>
-                        <td style="padding: 10px">Computer Science</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">Priya Sharma</td>
-                        <td style="padding: 10px">CS102</td>
-                        <td style="padding: 10px">Computer Science</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">Rahul Nair</td>
-                        <td style="padding: 10px">ME201</td>
-                        <td style="padding: 10px">Mechanical Engineering</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">Sneha Patel</td>
-                        <td style="padding: 10px">ME202</td>
-                        <td style="padding: 10px">Mechanical Engineering</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">John Doe</td>
-                        <td style="padding: 10px">EE301</td>
-                        <td style="padding: 10px">Electrical Engineering</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">Anita Desai</td>
-                        <td style="padding: 10px">EE302</td>
-                        <td style="padding: 10px">Electrical Engineering</td>
-                    </tr>
-                </tbody>
             </table>
         </div>
 {% endblock %}
