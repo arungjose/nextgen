@@ -1,18 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-        <div>
-            <h2>Course Catalog</h2>
+        <div class="crse_details">
+            <h1>Course Catalog</h1>
 
             <p>Select your course:</p>
-            <ul>
+            <table>
+                <tr>
+                    <th>Courses</th>
+                </tr>
             {% for items in courses %}
-                <li>{{ items }}</li>
+                <tr><td>{{ items }}</td></tr>
             {% endfor %}
-            </ul>
-                <br><br>
+            </table>
+                <br>
+                <a href="" class="btn">Course Details</a>
+                <br>
 
-                <h2>Total UG courses    :   {{count.UG}}</h2>
-                <h2>Total PG courses    :   {{count.PG}}</h2>
+                <h3>Total UG courses    :   {{count.UG}}</h3>
+                <h3>Total PG courses    :   {{count.PG}}</h3>
 
                 {% if count.PG > 3 %}
                 <h4>NAAC ACREDITED COLLEGE!</h4>

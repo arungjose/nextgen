@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{# The form coming form the view will be placed here #}
+
+<h1>Student Details Form</h1>
+<p>Please enter the student detials below!</p>
+<form method="POST">
+    {% csrf_token %}
+    {# as_p is given tot present the form #}
+    {{form.as_p}}
+    <input type="submit" value="Submit"/>
+</form>
+
+{% endblock %}

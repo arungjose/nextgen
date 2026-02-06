@@ -1,8 +1,20 @@
+from lzma import FORMAT_ALONE
+import re
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Student
+from .forms import StudentForm
 
-# Create your views here.
+# Create your views here
+def student_form(request):
+    if request.method=="GET":
+        form=StudentForm()
+        return render(request, "students/studentform.html", {'form':form})
+    else: # When form is submitted /students/form is called in POST
+        form=StudentForm(request.POST) # Filled Form
+        if form.is_valid(): # Checking id form is valid
+            form.save() # Make changed to db
+        return redirect("studentlist")
 def student_list(request):
     data=Student.objects.all()
 
