@@ -55,7 +55,7 @@ nav a:hover {
 
 .std_table table {
     width: 50%;
-    border-collapse: collapse;
+
     margin-top: 20px;
 }
 
@@ -147,12 +147,55 @@ li:hover {
     color:white;
 }
 
-#formsforms {
-    flex-direction: column;
+.formstudent {
+    padding: 5px;
 }
 
 #updater {
     flex-direction: column;
+}
+
+#formsforms {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    padding: 30px;
+    background-color: #ffdb26;
+    margin: 2rem auto;
+    border: 1px solid #ffdb26;
+    border-radius: 10px;
+}
+#formsforms h1,
+#formsforms p,
+#formsforms label{
+    color: #043873;
+}
+
+.formstudent {
+    margin-top: 20px;
+}
+
+.formstudent label{
+    padding: 5px;
+}
+
+.formstudent input {
+    display: block;
+    width: 15rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #043873;
+    margin: 5px;
+}
+
+.formstudent input[type="submit"] {
+    display: block;
+    background-color: white;
+    color: #043873;
+    border: 2px solid #043873;
+    cursor: pointer;
+    width: 8rem;
+    margin: 1.5rem auto 0
 }
 
 main {

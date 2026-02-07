@@ -2,9 +2,9 @@
 {% load static %}
 {% block content %}
 
-<div class="container" id="updater">
-<h2>Update the Student Record</h2><br>
-<form method="POST">
+<div class="container" id="formsforms">
+<h1>Update the Student Record</h1>
+<form class='formstudent' method="POST">
     {% csrf_token %}
     {# as_p is given tot present the form #}
     {{form.as_p}}

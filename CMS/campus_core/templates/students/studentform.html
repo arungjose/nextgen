@@ -6,7 +6,7 @@
 <div class="container" id="formsforms">
 <h1>Student Details Form</h1>
 <p>Please enter the student detials below!</p>
-<form method="POST">
+<form class='formstudent' method="POST">
     {% csrf_token %}
     {# as_p is given tot present the form #}
     {{form.as_p}}
