@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<table>
+<div class="container" id='updater'>
+    <h2>Course Detials</h2><br>
+<table class="crs_table">
     <tr>
         <th>Name</th>
         <th>Specialization</th>
@@ -18,5 +20,5 @@
     </tr>
     {% endfor %}
 </table>
-
+</div>
 {% endblock %}

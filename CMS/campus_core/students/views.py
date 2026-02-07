@@ -1,5 +1,3 @@
-from lzma import FORMAT_ALONE
-import re
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .models import Student
@@ -15,13 +13,12 @@ def student_form(request):
         if form.is_valid(): # Checking id form is valid
             form.save() # Make changed to db
         return redirect("studentlist")
+
 def student_list(request):
     data=Student.objects.all()
-
     return render(request, "students/studentlist.html", {"data": data, "count":len(data)})
 
 def old_student_list(request):
-
    std_record = [
        {'slno': 1, 'name': 'Arun Kumar', 'course': 'Computer Science'},
        {'slno': 2, 'name': 'Priya Sharma', 'course': 'Computer Science'},
@@ -33,3 +30,20 @@ def old_student_list(request):
    data = {"admission_closed": False, "count": 63, "students":std_record}
    return render(request, "students/studentlist.html", {"adm_data": data})
     # return HttpResponse("<h1>WELCOME TO THE STUDENT DIRECTORY</h1>")
+
+
+def student_delete(request, sid):
+    record=Student.objects.get(id=sid) # Select * FROM student WHERE id=sid
+    record.delete()
+    return redirect("studentlist")
+
+def student_update(request, sid):
+    record=Student.objects.get(id=sid)
+    if request.method=='GET':
+        form=StudentForm(instance=record) #Filled form with selected student record
+        return render(request, 'students/update_form.html', {'form':form})
+    else:
+        form=StudentForm(request.POST,instance=record)
+        if form.is_valid():
+            form.save()
+        return redirect('studentlist')

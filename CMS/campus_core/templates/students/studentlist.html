@@ -19,6 +19,7 @@
             <th>Name</th>
             <th>Sem</th>
             <th>Course</th>
+            <th colspan="2">Actions</th>
         </tr>
         {% for stud in data %}
         <tr>
@@ -26,8 +27,11 @@
             <td>{{stud.name}}</td>
             <td>{{stud.sem}}</td>
             <td>{{stud.course}}</td>
+            <td class="dltdlt"><a id="del_btn" href="/students/delete/{{stud.id}}">Delete</a></td>
+            <td class="dltdlt"><a id="del_btn" href="/students/update/{{stud.id}}">Edit</a></td>
         </tr>
         {% endfor %}
     </table>
+    <a class="btn" href="form">Student Form</a>
 </div>
 {% endblock %}

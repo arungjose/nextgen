@@ -55,7 +55,7 @@ nav a:hover {
 
 .std_table table {
     width: 50%;
-    /*border-collapse: collapse;*/
+    border-collapse: collapse;
     margin-top: 20px;
 }
 
@@ -96,6 +96,20 @@ li:hover {
     color: #ffdb26;
 }
 
+.crs_table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.crs_table table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
 .main {
     padding: 20px;
     align-content: center;
@@ -119,6 +133,27 @@ li:hover {
     border-radius: 5px;
 }
 
+#del_btn {
+
+    padding: 0px;
+    text-align: left;
+}
+
+.dltdlt {
+    background-color: #043873;
+    border: 1px solid white
+}
+.dltdlt a {
+    color:white;
+}
+
+#formsforms {
+    flex-direction: column;
+}
+
+#updater {
+    flex-direction: column;
+}
 
 main {
     flex: 1;

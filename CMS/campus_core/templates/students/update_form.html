@@ -2,10 +2,8 @@
 {% load static %}
 {% block content %}
 
-{# The form coming form the view will be placed here #}
-<div class="container" id="formsforms">
-<h1>Student Details Form</h1>
-<p>Please enter the student detials below!</p>
+<div class="container" id="updater">
+<h2>Update the Student Record</h2><br>
 <form method="POST">
     {% csrf_token %}
     {# as_p is given tot present the form #}
