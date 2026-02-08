@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container" id="formsforms">
+    <h1>Update Course Record</h1>
+    <form class="formstudent" method='POST'>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
+{% endblock %}

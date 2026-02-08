@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
         <div class="crse_details">
             <h1>Course Catalog</h1>
 
-            <p>Select your course:</p>
+            <p>The courses we provide:</p>
             <table>
                 <tr>
                     <th>Courses</th>
@@ -20,7 +21,7 @@
                 <h3>Total PG courses    :   {{count.PG}}</h3>
 
                 {% if count.PG > 3 %}
-                <h4>NAAC ACREDITED COLLEGE!</h4>
+                <h4 style="color: orangered;">NAAC ACREDITED COLLEGE!</h4>
                 {% endif %}
 
             </form>

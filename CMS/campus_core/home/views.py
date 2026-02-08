@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from .forms import ContactForm
+from django.shortcuts import render, redirect
 
 
 # Create your views here.
@@ -11,4 +12,13 @@ def about(request):
 
 
 def contact(request):
-    return render(request, "home/contact.html")
+    if request.method=='POST':
+        form=ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+        return redirect('mainpage')
+
+    else:
+        form = ContactForm()
+
+    return render(request, "home/contact.html", {'form': form})

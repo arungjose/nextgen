@@ -55,7 +55,6 @@ nav a:hover {
 
 .std_table table {
     width: 50%;
-
     margin-top: 20px;
 }
 
@@ -78,7 +77,11 @@ th, td:hover {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
+}
+
+.crse_details table {
+    width: 20%;
 }
 
 ul {
@@ -111,8 +114,12 @@ li:hover {
 }
 
 .main {
-    padding: 20px;
-    align-content: center;
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .btn {
@@ -188,6 +195,23 @@ li:hover {
     margin: 5px;
 }
 
+
+.formstudent input[type="checkbox"] {
+    width: 2rem;
+    height:2rem;
+    accent-color: #043873;
+    cursor: pointer;
+}
+
+textarea {
+    display: block;
+    width: 20rem;
+    height:10rem;
+    accent-color: #043873;
+    font-size: 16px;
+    resize: none;
+}
+
 .formstudent input[type="submit"] {
     display: block;
     background-color: white;
@@ -198,7 +222,25 @@ li:hover {
     margin: 1.5rem auto 0
 }
 
+.aboutbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.abouttable {
+    width: 70%;
+    margin: 20px auto 0;
+    border: 1px solid white;
+
+}
+
 main {
+
     flex: 1;
 }
 

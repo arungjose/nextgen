@@ -2,18 +2,17 @@
 {% load static %}
 {% block content %}
 
-<div class="container">
+<div class="aboutbox">
     <div class="main">
-    <center>
     <h1>About Campus Core</h1>
-    <p>
-        Campus Core is a Django-based application <br>built to organize
-        school data.
-    </p>
-
-    <p>The system is divided into two main modules:</p>
-
-    </center>
+    <table class="abouttable">
+        <tr>
+           <td><img src="{% static 'images/coding.png' %}" width="25px" alt="icon"></td>
+        </tr>
+        <tr>
+            <td>Welcome to the NextGen Campus Management System, a streamlined platform designed to simplify academic administration and student engagement. We believe that accessing educational information should be as intuitive as the learning process itself. Our system provides a centralized hub where students can explore a diverse Course Catalog—ranging from specialized Engineering tracks like CSE and ECE to foundational Arts and Sciences. With real-time updates to course details, fee structures, and accreditation status, we ensure that every student has the data they need to make informed decisions about their future.</td>
+        </tr>
+    </table>
     </div>
     <img src="{% static 'images/campus.png' %}" alt="Image of a campus" width="500"/>
 </div>

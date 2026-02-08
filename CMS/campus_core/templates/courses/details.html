@@ -9,6 +9,7 @@
         <th>Specialization</th>
         <th>Fee</th>
         <th>Accreditation</th>
+        <th colspan="2">Action</th>
     </tr>
 
     {% for course in details %}
@@ -17,6 +18,8 @@
         <td>{{course.spec}}</td>
         <td>{{course.fee}}</td>
         <td>{{course.accr}}</td>
+        <td class="dltdlt"><a id='del_btn' href="{% url 'coursedelete' course.id %}">Delete</a></td>
+        <td class="dltdlt"><a id="del_btn" href="{% url 'courseupdate' course.id %}">Edit</td>
     </tr>
     {% endfor %}
 </table>
