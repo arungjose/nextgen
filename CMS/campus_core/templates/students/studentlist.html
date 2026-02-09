@@ -27,7 +27,7 @@
             <td>{{stud.name}}</td>
             <td>{{stud.sem}}</td>
             <td>{{stud.course}}</td>
-            <td class="dltdlt"><a id="del_btn" href="/students/delete/{{stud.id}}">Delete</a></td>
+            <td class="dltdlt"><a id="del_btn" href="javascript:void(0);" onclick="OpenPopup('{{stud.id}}')">Delete</a></td>
             <td class="dltdlt"><a id="del_btn" href="/students/update/{{stud.id}}">Edit</a></td>
         </tr>
         {% endfor %}

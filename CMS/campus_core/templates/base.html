@@ -7,6 +7,7 @@
     <title>Campus Management System</title>
     <link rel="stylesheet" href="{% static 'styles/base.css' %}">
     <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <script src="{% static 'js/pop-up.js' %}"></script>
 </head>
 <body>
     <nav>
@@ -26,5 +27,18 @@
     <footer>
         &copy; 2025 Campus Core. All rights reserved by Arun the Great.
     </footer>
+
+    <!--The following code is for the conformation pop-up-->
+    <div id="deleteModal"  class="modal-overlay">
+        <div class="dltMDL">
+            <div class="dltmodal-text">
+                <h3>Are you sure you want to delete?</h3>
+            </div>
+            <div class="dltmodal-btn">
+                <a href="#" class="conf_del" id="confirmDeleteBtn">Yes, Delete</a>
+                <a href="javascript:void(0);" class="cancel_del" onclick="ClosePopup()">No</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

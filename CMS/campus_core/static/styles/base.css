@@ -248,3 +248,57 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    background-color: #042c59;
+    z-index: 20;
+
+}
+
+.dltMDL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    width: 25rem;
+    height: 10rem;
+}
+
+.dltmodal-text{
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+.dltmodal-btn {
+    display: flex;
+    width: 100%;       /* Make the container fill the modal width */
+    margin-top: auto;   /* Pushes buttons to the very bottom of the box */
+
+}
+
+.dltmodal-btn a {
+    flex: 1;            /* Forces both buttons to take up equal 50% width */
+    text-align: center; /* Centers the text inside the button */
+    padding: 15px 0;    /* Vertical padding for height */
+    text-decoration: none;
+    /*border: 1px solid #043873*/
+
+}
+
+.conf_del {
+    background-color: #ffdb26;
+    color: #043873;
+    padding:10px;
+
+}
+.cancel_del {
+    background-color: white;
+    color: #043873;
+    padding:10px
+}
