@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .models import Courses
 from .forms import CourseForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def course_catalog(request):
@@ -22,6 +23,7 @@ def course_delete(request, cid):
     record.delete()
     return redirect('coursedetails')
 
+@login_required
 def course_update(request, cid):
     record = Courses.objects.get(id=cid)
     if request.method=='GET':
