@@ -15,10 +15,55 @@ body {
 
 nav {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: #043873;
-    padding: 10px 0;
+    padding: 10px 20px;
+}
+
+.nav-spacer,
+.nav-right {
+    flex: 1;
+}
+
+.nav-right {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right button {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+.nav-right button:hover {
+    color: #ED3F27;
+}
+
+.nav-right span {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.nav-right form span {
+    background-color: #ffdb26;
+    padding:10px 20px;
+    /*border-radius: 15px;*/
+    color: #043873;
+}
+
+.nav-right form span:hover {
+    background-color: #ED3F27;
+    padding:10px 20px;
+    /*border-radius: 15px;*/
+    color: #FDF4E3;
 }
 
 a {
@@ -36,6 +81,12 @@ nav a:hover {
     border-bottom: 1px solid white;
 
 }
+
+.nav-right{
+    flex: 1;
+    text-align: right;
+}
+
 
 .container {
     display: flex;
@@ -292,13 +343,13 @@ footer {
 }
 
 .conf_del {
-    background-color: #ffdb26;
-    color: #043873;
+    background-color: #ED3F27;
+    color: white;
     padding:10px;
 
 }
 .cancel_del {
-    background-color: white;
+    background-color: #ffdb26;
     color: #043873;
     padding:10px
 }

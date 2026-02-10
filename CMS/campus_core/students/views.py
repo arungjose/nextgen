@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .models import Student
 from .forms import StudentForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here
 def student_form(request):
@@ -37,6 +38,7 @@ def student_delete(request, sid):
     record.delete()
     return redirect("studentlist")
 
+@login_required
 def student_update(request, sid):
     record=Student.objects.get(id=sid)
     if request.method=='GET':
