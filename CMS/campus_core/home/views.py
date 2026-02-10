@@ -1,3 +1,4 @@
+from django.contrib.auth.forms import UserCreationForm
 from .forms import ContactForm
 from django.shortcuts import render, redirect
 
@@ -22,3 +23,14 @@ def contact(request):
         form = ContactForm()
 
     return render(request, "home/contact.html", {'form': form})
+
+
+def register(request):
+    if request.method=='POST': # File clicking register button
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save() # New user will be added to auth_user
+            return redirect('login')
+    else: # First time when register page is loaded
+        form=UserCreationForm()
+    return render(request, 'registration/register.html', {'form':form})

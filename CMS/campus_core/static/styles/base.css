@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #043873;
+    background-color: #0d386e;
     color: white;
     font-family: 'JetBrains mono';
     line-height: 1.6;
@@ -16,7 +16,7 @@ body {
 nav {
     display: flex;
     align-items: center;
-    background-color: #043873;
+    background-color: #0d386e;
     padding: 10px 20px;
 }
 
@@ -56,7 +56,7 @@ nav {
     background-color: #ffdb26;
     padding:10px 20px;
     /*border-radius: 15px;*/
-    color: #043873;
+    color: #0d386e;
 }
 
 .nav-right form span:hover {
@@ -118,7 +118,7 @@ th, td {
 th, td:hover {
     border: 1px solid #ffdb26;
     background-color: #ffdb26;
-    color: #043873;
+    color: #0d386e;
     padding: 5px;
     text-align: left;
 }
@@ -173,10 +173,14 @@ li:hover {
 
 }
 
+.registerforms {
+    flex-direction: column;
+}
+
 .btn {
     display: inline-block;
     background-color: #ffffff;
-    color: #043873;
+    color: #0d386e;
     padding: 10px 15px;
     margin: 10px;
     border-radius: 5px;
@@ -185,7 +189,7 @@ li:hover {
 .btn:hover {
     display: inline-block;
     background-color: #ffdb26;
-    color: #043873;
+    color: #0d386e;
     padding: 10px 15px;
     margin: 10px;
     border-radius: 5px;
@@ -198,7 +202,7 @@ li:hover {
 }
 
 .dltdlt {
-    background-color: #043873;
+    background-color: #0d386e;
     border: 1px solid white
 }
 .dltdlt a {
@@ -226,7 +230,7 @@ li:hover {
 #formsforms h1,
 #formsforms p,
 #formsforms label{
-    color: #043873;
+    color: #0d386e;
 }
 
 .formstudent {
@@ -242,7 +246,7 @@ li:hover {
     width: 15rem;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #043873;
+    border: 1px solid #0d386e;
     margin: 5px;
 }
 
@@ -250,7 +254,7 @@ li:hover {
 .formstudent input[type="checkbox"] {
     width: 2rem;
     height:2rem;
-    accent-color: #043873;
+    accent-color: #0d386e;
     cursor: pointer;
 }
 
@@ -258,7 +262,7 @@ textarea {
     display: block;
     width: 20rem;
     height:10rem;
-    accent-color: #043873;
+    accent-color: #0d386e;
     font-size: 16px;
     resize: none;
 }
@@ -266,8 +270,8 @@ textarea {
 .formstudent input[type="submit"] {
     display: block;
     background-color: white;
-    color: #043873;
-    border: 2px solid #043873;
+    color: #0d386e;
+    border: 2px solid #0d386e;
     cursor: pointer;
     width: 8rem;
     margin: 1.5rem auto 0
@@ -288,6 +292,26 @@ textarea {
     margin: 20px auto 0;
     border: 1px solid white;
 
+}
+
+.register-inner li{
+    color: #ED3F27;
+}
+
+.form-group button {
+    background-color:  #0d386e;
+    padding:10px 20px;
+    border-radius: 5px;
+    border: 3px solid #0d386e;
+    color: white;
+}
+
+.form-group button:hover {
+    background-color:  #ED3F27;
+    padding:10px 20px;
+    border-radius: 5px;
+    border: 3px solid #ED3F27;
+    color: white;
 }
 
 main {
@@ -338,7 +362,7 @@ footer {
     text-align: center; /* Centers the text inside the button */
     padding: 15px 0;    /* Vertical padding for height */
     text-decoration: none;
-    /*border: 1px solid #043873*/
+    /*border: 1px solid #0d386e*/
 
 }
 
@@ -350,6 +374,6 @@ footer {
 }
 .cancel_del {
     background-color: #ffdb26;
-    color: #043873;
+    color: #0d386e;
     padding:10px
 }
