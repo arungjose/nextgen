@@ -22,6 +22,7 @@
         </div>
 
         <div class="nav-right">
+            <a href="/register/" class="mainreg-btn">Register</a>
             {% if user.is_authenticated %}
             <form action="{% url 'logout' %}" method="post">
                 <span>{{user.username}}</span>

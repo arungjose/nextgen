@@ -334,6 +334,8 @@ textarea {
         margin: 10px 10px 0px 0px;
 }
 
+
+
 main {
 
     flex: 1;
@@ -396,4 +398,15 @@ footer {
     background-color: #ffdb26;
     color: #0d386e;
     padding:10px
+}
+
+.nav-right .mainreg-btn {
+
+    color: #ED3F27;
+    padding:5px 20px;
+}
+
+.nav-right .mainreg-btn:hover {
+    color: #FDF4E3;
+    padding:5px 20px;
 }
